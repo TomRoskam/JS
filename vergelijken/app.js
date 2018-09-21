@@ -1,4 +1,4 @@
-let integer5 = 5; //Dit is gelijk.
+let integer5 = 5; //Dit is gelijk
 let double = 5.0;
 
 if ( integer5 == double) {
