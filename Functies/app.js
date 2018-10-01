@@ -1,6 +1,6 @@
 function giveMeSomeNiceName(gender) {
     if (gender == "male") {
-        console.log("Jij heet Henk!");
+        console.log("Jij heet Henk!");//DOET HIJ HET?
     }
     else if (gender == "female") {
         console.log("Jij heet Jan!");
