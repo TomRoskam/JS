@@ -112,7 +112,7 @@ const filteredLapRoundsWithForLoop = function () {
     return newArray;
  }
  
- let result = lapRounds.filter(function(value){
+ let result = lapRounds.filter(function(value){  //Dit is veel minder code hierdoor kan er gemakkelijker mee gewerkt worden.
      return value  < 4; 
  });
 
