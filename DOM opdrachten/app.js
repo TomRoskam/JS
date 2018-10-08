@@ -1,19 +1,77 @@
 //opdracht1
-let c1 = document.getElementsByTagName("td");
+let course = document.getElementsByTagName("td");
+console.log(course[1].innerText);
 
-console.log(c1[1].innerText);
-console.log(c1[3].innerText);
-console.log(c1[5].innerText);
-console.log(c1[7].innerText);
+//Om aan te geven of de waardes van de course een Number zijn
+function stringOfNUmber() {
+    if (typeof(course[1]) == "String") {
+        console.log("Dit is tekst");
+    } else if (typeof(course[1] == "Number")) {
+        console.log("Dit is een cijfer");
+    } else {
+        console.log("Dit herken ik niet");
+    }
+}
 
+stringOfNUmber(); //output is Number
 
-totaal = totaalc1(c1[1].innerText) + " " + c1[3].innerText + " " +  c1[5].innerText + " " +  c1[7].innerText;
+console.log(course[3].innerText);
+
+function stringOfNUmber() {
+    if (typeof(course[3]) == "string") {
+        console.log("Dit is tekst");
+    } else if (typeof(course[3] == "Number")) {
+        console.log("Dit is een cijfer");
+    } else {
+        console.log("Dit herken ik niet");
+    }
+}
+
+stringOfNUmber();
+
+console.log(course[5].innerText);
+
+function stringOfNUmber() {
+    if (typeof(course[5]) == "string") {
+        console.log("Dit is tekst");
+    } else if (typeof(course[5] == "Number")) {
+        console.log("Dit is een cijfer");
+    } else {
+        console.log("Dit herken ik niet");
+    }
+}
+
+stringOfNUmber();
+
+console.log(course[7].innerText);
+
+function stringOfNUmber() {
+    if (typeof(course[7]) == "string") {
+        console.log("Dit is tekst");
+    } else if (typeof(course[7] == "Number")) {
+        console.log("Dit is een cijfer");
+    } else {
+        console.log("Dit herken ik niet");
+    }
+}
+
+stringOfNUmber();
+
+let totaal = parseInt(course[1].innerText) + parseInt(course[3].innerText) + parseInt(course[5].innerText)+ parseInt(course[7].innerText);
 console.log(totaal);
+let gemiddelde = totaal/4;
+console.log(gemiddelde);
 
-console.log(totaalc1);
+function gemiddeldeToevoegen() {
+    let table = document.getElementById("cijfers");
+    let row = table.insertRow(4);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    cell1.innerHTML = "gemiddelde";
+    cell2.innerHTML = gemiddelde;
+}
 
-
-
+gemiddeldeToevoegen();
 
 //opdracht2
 const kleur = document.getElementById("course");
