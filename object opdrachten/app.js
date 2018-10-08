@@ -35,8 +35,7 @@ for (let i = 0 ; i < teachers.length ; i++) {
     console.log(`I have a ${teachers[i].profession} named ${teachers[i].name} and he likes to work on a ${teachers[i].brand} computer`);
 }
 
-for(i=0 ; i<teachers.length ; i++){
+for (let i = 0 ; i < teachers.length ; i++) {
     console.log(`${teachers[i].name} verdient ${teachers[i].salary} per ${teachers[i].hoursPerWeek} uur.`);
-    
-    }
+}
 
