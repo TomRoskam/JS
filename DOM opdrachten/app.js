@@ -57,7 +57,7 @@ function stringOfNUmber() {
 
 stringOfNUmber();
 
-let totaal = parseInt(course[1].innerText) + parseInt(course[3].innerText) + parseInt(course[5].innerText)+ parseInt(course[7].innerText);
+let totaal = parseFloat(course[1].innerText) + parseFloat(course[3].innerText) + parseFloat(course[5].innerText)+ parseFloat(course[7].innerText);
 console.log(totaal);
 let gemiddelde = totaal/4;
 console.log(gemiddelde);
