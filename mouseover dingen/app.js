@@ -53,7 +53,7 @@ function Ball() {
 }
 
 var bal = [];
-for (var i=0; i<500; i++){
+for (var i=0; i<5000; i++){
     bal.push(new Ball());
 }
 
@@ -82,9 +82,9 @@ function animate() {
       mousex < bal[i].x + 20 &&
       mousey > bal[i].y -50 &&
       mousey < bal[i].y +50 &&
-      bal[i].radius < 700){
+      bal[i].radius < 7000){
         //bal[i].x += +1;
-        bal[i].radius +=20; 
+        bal[i].radius +=200; 
       } else {
         if(bal[i].radius > bal[i].startradius){
           bal[i].radius += -5;
