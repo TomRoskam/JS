@@ -36,29 +36,21 @@ while (arr.length < 9) { //Een plaatje kan niet 2x voor komen in het img-grid
         console.log("GOED");
         animal.setAttribute("id", "good");
         document.getElementById("good").onclick = function () {
-        document.getElementById("message").innerHTML = "goed geraden!";
-        location.reload();
-    } 
-}
+            document.getElementById("message").innerHTML = "goed geraden!";
+            location.reload();
+        }
+    }
     else {
         animal.setAttribute("id", "bad" + i)
         document.getElementById("bad" + i).onclick = function () {
-        document.getElementById("message").innerHTML = "nee dat is fout";
+            document.getElementById("message").innerHTML = "nee dat is fout";
         }
-        i = i+1
+        i = i + 1
     }
+}
 
-
-   
-    
-
-   
-    }
-    console.log(imageAtRandom.slice(-10));
-    console.log(randomImage.src.slice(-10));
-
-
-
+console.log(imageAtRandom.slice(-10));
+console.log(randomImage.src.slice(-10));
 console.log(arr);
 console.log(randomImage);
 console.log(imageAtRandom);
